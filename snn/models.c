@@ -1,22 +1,20 @@
 #include <stdio.h>
-#include <Python/Python.h>
+#include <Python.h>
+#include <numpy/arrayobject.h>
 
-
-void module_test(){
-
-	printf("Hello world");
-
-}
 
 int main(){
-
 	return 0;
+}
 
+static PyObject *models_test() {
+	printf("hello world\n");
+	return 0;
 }
 
 /* Method mapping table */
 static PyMethodDef Model_Methods[] = {
-    {"module_test", module_test, METH_VARARGS, "Python interface for fputs C library function"},
+    {"test", models_test, METH_VARARGS, "Python interface for fputs C library function"},
     {NULL, NULL, 0, NULL}
 };
 
@@ -29,8 +27,6 @@ static struct PyModuleDef models = {
     Model_Methods
 };
 
-/*
 PyMODINIT_FUNC PyInit_models(void) {
     return PyModule_Create(&models);
 }
-*/

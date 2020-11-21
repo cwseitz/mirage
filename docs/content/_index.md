@@ -1,9 +1,9 @@
 ---
-title: "~"
+title: ""
 type: docs
 ---
 
-# ~ mirage
+# Mirage
 
 The mirage project constructor was called in late 2020; as a whole, the project
 is dedicated to the search for 20/20 computer vision. Currently, we are on

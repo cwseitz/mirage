@@ -1,6 +1,6 @@
 {
-  "name": "Hugo Book",
-  "short_name": "Hugo Book",
+  "name": "mirage",
+  "short_name": "mirage",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

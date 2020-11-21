@@ -3,59 +3,59 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://example.com/ru/categories/</loc>
+    <loc>/ru/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/categories/"
+                href="/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://example.com/zh/categories/"
+                href="/zh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://example.com/ru/categories/"
+                href="/ru/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/ru/</loc>
+    <loc>/ru/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/"
+                href="/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://example.com/zh/"
+                href="/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://example.com/ru/"
+                href="/ru/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/ru/tags/</loc>
+    <loc>/ru/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/"
+                href="/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://example.com/zh/tags/"
+                href="/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://example.com/ru/tags/"
+                href="/ru/tags/"
                 />
   </url>
   

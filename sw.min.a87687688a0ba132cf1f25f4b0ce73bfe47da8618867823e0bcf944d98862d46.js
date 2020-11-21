@@ -1,0 +1,1 @@
+if(navigator.serviceWorker){navigator.serviceWorker.register("/mirage/sw.js",{scope:"/mirage/"});}

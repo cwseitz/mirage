@@ -1,14 +1,14 @@
 {
   "name": "mirage",
   "short_name": "mirage",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "/mirage/",
+  "scope": "/mirage/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/mirage/favicon.svg",
       "sizes": "512x512"
     }
   ]

@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mirage</title>
-    <link>/zh/</link>
+    <link>mirage/zh/</link>
     <description>Recent content on mirage</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="/zh/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="mirage/zh/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

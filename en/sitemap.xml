@@ -3,37 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>mirage/docs/example/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/example/table-of-contents/with-toc/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/example/table-of-contents/without-toc/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>mirage/posts/creating-a-new-theme/</loc>
     <lastmod>2020-11-20T18:29:30-06:00</lastmod>
   </url>
   
   <url>
     <loc>mirage/posts/migrate-from-jekyll/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/example/table-of-contents/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/example/collapsed/</loc>
     <lastmod>2020-11-20T18:29:30-06:00</lastmod>
   </url>
   
@@ -128,93 +103,13 @@
   </url>
   
   <url>
-    <loc>mirage/docs/example/collapsed/3rd-level/4th-level/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/example/collapsed/3rd-level/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/example/hidden/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/shortcodes/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/shortcodes/buttons/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/shortcodes/columns/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/shortcodes/details/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/shortcodes/expand/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/shortcodes/hints/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/shortcodes/katex/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/shortcodes/mermaid/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/shortcodes/section/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/shortcodes/section/page1/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/shortcodes/section/page2/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>mirage/docs/shortcodes/tabs/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>mirage/posts/</loc>
     <lastmod>2020-11-20T18:29:30-06:00</lastmod>
   </url>
   
   <url>
-    <loc>mirage/docs/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>mirage/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
+    <lastmod>2020-11-20T20:37:53-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"

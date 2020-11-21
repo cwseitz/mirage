@@ -1,6 +1,0 @@
-setup.py
-snn/models.c
-snn.egg-info/PKG-INFO
-snn.egg-info/SOURCES.txt
-snn.egg-info/dependency_links.txt
-snn.egg-info/top_level.txt

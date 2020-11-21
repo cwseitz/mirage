@@ -103,13 +103,8 @@
   </url>
   
   <url>
-    <loc>mirage/posts/</loc>
-    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>mirage/</loc>
-    <lastmod>2020-11-20T20:37:53-06:00</lastmod>
+    <lastmod>2020-11-20T21:23:42-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -125,6 +120,11 @@
                 hreflang="en"
                 href="mirage/"
                 />
+  </url>
+  
+  <url>
+    <loc>mirage/posts/</loc>
+    <lastmod>2020-11-20T18:29:30-06:00</lastmod>
   </url>
   
 </urlset>

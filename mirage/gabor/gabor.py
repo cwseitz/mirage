@@ -1,63 +1,74 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
-def harmonic(X, A, k):
+def harmonic(X, w0):
 
     """
-    Returns a 2D harmonic function parameterized by frequency and direction
+    Returns a 2D harmonic function parameterized by a wave vector
     """
 
     x = X[0]; y = X[1]
-    k_x, k_y = k
-    psi_real = np.cos(k_x*x + k_y*y)
-    psi_imag = np.sin(k_x*x + k_y*y)
+    w_x, w_y = w0
+    psi_real = np.cos(w_x*x + w_y*y)
+    psi_imag = np.sin(w_x*x + w_y*y)
 
     return psi_real, psi_imag
 
 
-def gaussian_2d(X, A, x0, y0, sig_x, sig_y, phi):
+def gaussian_2d(X, r0, sigma, phi):
 
     """
     2D Gaussian function
+
     Parameters
     ----------
-    X : 3d ndarray
-        X = np.indices(img.shape).
-		X[0] is the row indices.
-        Y[1] is the column indices.
-    A : float
-        Amplitude.
-    x0 : float
-        x coordinate of the center.
-    y0 : float
-        y coordinate of the center.
-    sig_x : float
-        Sigma in x direction.
-    sig_y : float
-        Sigma in x direction.
-    phi : float
-        Angle between long axis and x direction.
+
+    References
+    ----------
+    Tai Sing Lee, Image Representation with 2D Gabor Wavelets, IEEE 1996
+
     Returns
     -------
-    result_array_2d: 2d ndarray
-        2D gaussian.
+
     """
 
-    x = X[0]
-    y = X[1]
-    a = (np.cos(phi)**2)/(2*sig_x**2) + (np.sin(phi)**2)/(2*sig_y**2)
-    b = -(np.sin(2*phi))/(4*sig_x**2) + (np.sin(2*phi))/(4*sig_y**2)
-    c = (np.sin(phi)**2)/(2*sig_x**2) + (np.cos(phi)**2)/(2*sig_y**2)
-    result_array_2d = A*np.exp(-(a*(x-x0)**2+2*b*(x-x0)*(y-y0)+c*(y-y0)**2))
+    x, y = X; x0, y0 = r0
+    sigma_x, sigma_y = sigma
+    a = (np.cos(phi)*(x-x0) + np.sin(phi)*(y-y0))/sigma_x
+    b = (-np.sin(phi)*(x-x0) + np.cos(phi)*(y-y0))/sigma_y
+    gaussian_2d = np.exp(-(a**2 + b**2)/2)
 
-    return result_array_2d
+    return gaussian_2d
 
-X = np.indices((100,100))
-g = gaussian_2d(X, 1, 50, 50, 3, 2, np.pi)
-h_real, h_imag = harmonic(X, 1, (1,0))
-psi = g*h_real
+def gabor(X, r0, w0, sigma, phi):
 
-fig, ax = plt.subplots()
-ax.imshow(psi, cmap='coolwarm')
+    psi_a = gaussian_2d(X, r0, sigma, phi)
+    psi_b_real, psi_b_imag = harmonic(X, w0)
+
+    return psi_a*psi_b_real
+
+def gabor_frequency(X, w0, sigma, phi):
+    return gaussian_2d(X, w0, 1/np.array(sigma), phi)
+
+p = np.linspace(-50, 50, 1000)
+q = np.linspace(-50, 50, 1000)
+X = np.meshgrid(p, p)
+Y = np.meshgrid(q, q)
+
+sigma = [5,3]
+fig, ax = plt.subplots(1,2)
+
+#Generate points on a circle
+c = np.linspace(0, 2*np.pi, 5)
+
+for i in c:
+
+    r0 = [2*np.cos(i), 2*np.sin(i)]
+    w = [np.cos(i),np.sin(i)] #frequency domain coordinates
+    g1 = gabor(X, r0, w, sigma, i)
+
+    #g2 = gabor_frequency(Y, w, sigma, i)
+    ax[0].imshow(g1, cmap='gray')
+    #ax[1].imshow(g2, cmap='gray')
+
 plt.show()
